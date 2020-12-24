@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffcb30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    margin: auto 0;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head{
+    margin-bottom: 2rem;
+}
+.box{
+    background-color: rgb(67, 14, 117);
+    height: 25vw;
+    width: 60vh;
+    text-align: center;
+    position: relative;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 30rem;
+    transform: translate3d(0, 0, 0);
+}
+.inputData{
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 999px;
+    background-color: white;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.wave{
+    opacity: 0.2;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 48%;
+    margin-left: -25rem;
+    margin-top: -15rem;
+    transform-origin: 50% 48%;
+    animation: drift 1500ms infinite linear;
+    z-index: 1;
+}
+.wave.-three{
+    animation: drift 1500ms infinite linear;
+    z-index: 2!important;
+    opacity: 0.2;
+}
+.wave.-two{
+    animation: drift 1700ms infinite linear;
+    z-index: 3!important;
+    opacity: 0.1;
+}
+.wave.-one{
+    animation: drift 1300ms infinite linear;
+    z-index: 1!important;
+    opacity: 0.3;
+}
+@keyframes drift{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(60deg);
+    }
+    40%{
+        transform: rotate(120deg);
+    }
+    60%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.info{
+    padding: 5rem 0;
+}
+.temp{
+    padding: 1rem 0;
+}
+.btn{
+    padding: 0 .2rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 1rem;
+}

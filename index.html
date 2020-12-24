@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 class="head">Weather App</h1>
+    <div class="box">
+        <form class="inputData" id="form">
+            <input type="search" class="inputField" id="input" placeholder="Enter City Name" />
+            <button class="btn" id="btn"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div>
+            <div class="info">
+                <div class="location" id="location">
+                    <h1>location : unknown</h1>
+                </div>
+                <div class="temp" id="temp">
+                    <h2>Temp : * Cel</h2>
+                </div>
+                <div class="tempmin_max" id="minMax">
+                    <h3>Min : * Cel | Max : * Cel</h3>
+                </div>
+            </div>
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
